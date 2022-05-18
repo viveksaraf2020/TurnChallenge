@@ -34,13 +34,6 @@ public class LoginPage{
 	@FindBy(xpath="//*[@id='btnLogin']")
 	WebElement submitLogin;
 
-
-//	@FindBy(xpath="//*[@id='email_create']")
-//	WebElement registration;
-//
-//	@FindBy(xpath="//*[@id='SubmitCreate']")
-//	WebElement createAnAccount;
-
 	@FindBy(xpath="//*[@id='branding']/a[1]")
 	WebElement verifyHomepgaeHRM;
 
@@ -75,14 +68,9 @@ public class LoginPage{
 	}
 	
 	public boolean verifySuccessLoginMsg(){
+
 		return new GenericHelper().isDisplayed(successMsgObject);
 	}
-	
-//	public void enterRegistrationEmail(){
-//		String email = System.currentTimeMillis()+"@gmail.com";
-//		log.info("entering registration email.."+email);
-//		registration.sendKeys(email);
-//	}
 
 	public void loginToApplication(String userName, String password){
 		enterUserName(userName);

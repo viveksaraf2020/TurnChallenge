@@ -24,8 +24,7 @@ import java.util.Map;
 
 /**
  * 
- * @author Bhanu Pratap
- * https://www.youtube.com/user/MrBhanupratap29/playlists
+ * @author Vivek Saraf
  */
 public class HomePage {
 	
@@ -217,8 +216,6 @@ public class HomePage {
 		//this.jobVacancy.findElements()
 		Select dropdown = new Select(driver.findElement(By.id("candidateSearch_hiringManager")));
 		dropdown.selectByVisibleText("Odis Adalwin");
-
-
 	}
 
 	public void clickDownloadLink(){
@@ -238,12 +235,8 @@ public class HomePage {
 		el.click();
 		Thread.sleep(500);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		js.executeScript("document.querySelector('html > ins').style.display='none'");
-//Again click to 5MB web element
 		el.click();
-//Wait 15 seconds to download 5MB file.
-//You can write custom wait. Check Selenium Wait article on swtestacademy.com
 		Thread.sleep(15000);
 
 	}

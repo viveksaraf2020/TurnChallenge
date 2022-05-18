@@ -1,22 +1,17 @@
-2022-05-17 04:29:38 INFO  TestBase:112 - loading config.properties
-2022-05-17 04:29:38 INFO  TestBase:117 - loading or.properties
-2022-05-17 04:29:38 INFO  TestBase:122 - loading homepage.properties
-2022-05-17 04:29:40 INFO  WaitHelper:33 - 20
-2022-05-17 04:29:40 INFO  WaitHelper:38 - 240
-2022-05-17 04:29:40 INFO  LoginTest:42 - com.hybridFramework.loginPage.LoginTest started
-2022-05-17 04:29:44 INFO  LoginPage:55 - entering email address....Admin
-2022-05-17 04:29:44 INFO  LoginPage:60 - entering password....admin123
-2022-05-17 04:29:44 INFO  LoginPage:69 - clicking on submit button...
-2022-05-17 04:29:44 INFO  JavaScriptHelper:27 - window.scrollTo(0, document.body.scrollHeight)
-2022-05-17 04:29:49 INFO  WaitHelper:62 - element found...Dashboard
-2022-05-17 04:29:49 INFO  WaitHelper:62 - element found...Dashboard
-2022-05-17 04:29:49 INFO  HomePage:113 - Click Reqruitment Menu....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //b[normalize-space()='Recruitment']]
-2022-05-17 04:29:50 INFO  HomePage:118 - Click Add Button....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='btnAdd']]
-2022-05-17 04:29:51 INFO  HomePage:124 - Click Add first name....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_firstName']]
-2022-05-17 04:29:51 INFO  HomePage:131 - Click Add last name....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_lastName']]
-2022-05-17 04:29:51 INFO  HomePage:137 - Click Add email....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_email']]
-2022-05-17 04:29:51 INFO  HomePage:143 - Click Add contact number....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_contactNo']]
-2022-05-17 04:29:51 INFO  HomePage:148 - Click Add job vacancy....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_vacancy']]
-2022-05-17 04:29:52 INFO  HomePage:157 - Add resume....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_resume']]
-2022-05-17 04:30:05 INFO  HomePage:178 - Scroll down....
-2022-05-17 04:30:05 INFO  HomePage:162 - Add Keywords....[[ChromeDriver: chrome on MAC (840f250ce130e469a23c8c8f246673ad)] -> xpath: //*[@id='addCandidate_keyWords']]
+2022-05-18 06:57:40 INFO  TestBase:108 - loading config.properties
+2022-05-18 06:57:40 INFO  TestBase:113 - loading or.properties
+2022-05-18 06:57:40 INFO  TestBase:118 - loading homepage.properties
+2022-05-18 06:57:41 INFO  WaitHelper:33 - 20
+2022-05-18 06:57:41 INFO  WaitHelper:38 - 240
+2022-05-18 06:57:51 INFO  LoginTest:67 - com.hybridFramework.loginPage.LoginTest started
+2022-05-18 06:57:55 INFO  LoginPage:56 - entering email address....Admin
+2022-05-18 06:57:55 INFO  LoginPage:61 - entering password....admin123
+2022-05-18 06:57:55 INFO  LoginPage:70 - clicking on submit button...
+2022-05-18 06:57:55 INFO  JavaScriptHelper:27 - window.scrollTo(0, document.body.scrollHeight)
+2022-05-18 06:58:00 INFO  WaitHelper:62 - element found...Dashboard
+2022-05-18 06:58:00 INFO  WaitHelper:62 - element found...Dashboard
+2022-05-18 06:58:00 INFO  HomePage:113 - Click Reqruitment Menu....[[ChromeDriver: chrome on MAC (c573f62d4260c184b42d2caea49f607d)] -> xpath: //b[normalize-space()='Recruitment']]
+2022-05-18 06:58:01 INFO  HomePage:198 - Profile Added successfully....[[ChromeDriver: chrome on MAC (c573f62d4260c184b42d2caea49f607d)] -> xpath: //*[@id='candidateSearch_keywords']]
+2022-05-18 06:58:02 INFO  HomePage:215 - Search hiring manager....[[ChromeDriver: chrome on MAC (c573f62d4260c184b42d2caea49f607d)] -> xpath: //*[@id='candidateSearch_hiringManager']]
+2022-05-18 06:58:02 INFO  HomePage:210 - Click search button....[[ChromeDriver: chrome on MAC (c573f62d4260c184b42d2caea49f607d)] -> xpath: //*[@id='btnSrch']]
+2022-05-18 07:01:52 INFO  HomePage:225 - Click search button....[[ChromeDriver: chrome on MAC (c573f62d4260c184b42d2caea49f607d)] -> xpath: (//*[@id='resultTable']/tbody/tr/td[7]/a)[1]]

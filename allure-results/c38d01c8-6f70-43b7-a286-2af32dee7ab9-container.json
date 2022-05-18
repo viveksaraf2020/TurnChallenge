@@ -1,0 +1,1 @@
+{"uuid":"c38d01c8-6f70-43b7-a286-2af32dee7ab9","name":"com.hybridFramework.loginPage.LoginTest","children":["309f1384-adcc-4237-ad2d-30381835ef87"],"befores":[],"afters":[{"name":"endTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1652881977174,"stop":1652881977363}],"start":1652881946851,"stop":1652881977407}

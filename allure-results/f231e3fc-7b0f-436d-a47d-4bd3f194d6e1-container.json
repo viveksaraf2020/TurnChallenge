@@ -1,0 +1,1 @@
+{"uuid":"f231e3fc-7b0f-436d-a47d-4bd3f194d6e1","name":"hybridFramework","children":["e0898245-b837-4795-8926-80ff70db39bb"],"befores":[{"name":"launchBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1652882260086,"stop":1652882261762}],"afters":[],"start":1652882260068,"stop":1652883034950}

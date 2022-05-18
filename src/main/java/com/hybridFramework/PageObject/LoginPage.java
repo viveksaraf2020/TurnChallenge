@@ -10,8 +10,7 @@ import com.hybridFramework.helper.Javascript.JavaScriptHelper;
 import com.hybridFramework.helper.Logger.LoggerHelper;
 import com.hybridFramework.helper.Wait.WaitHelper;
 import com.hybridFramework.helper.genericHelper.GenericHelper;
-import com.hybridFramework.testBase.Config;
-import com.hybridFramework.testBase.TestBase;
+import org.testng.Assert;
 
 /**
  * 
@@ -36,11 +35,14 @@ public class LoginPage{
 	WebElement submitLogin;
 
 
-	@FindBy(xpath="//*[@id='email_create']")
-	WebElement registration;
+//	@FindBy(xpath="//*[@id='email_create']")
+//	WebElement registration;
+//
+//	@FindBy(xpath="//*[@id='SubmitCreate']")
+//	WebElement createAnAccount;
 
-	@FindBy(xpath="//*[@id='SubmitCreate']")
-	WebElement createAnAccount;
+	@FindBy(xpath="//*[@id='branding']/a[1]")
+	WebElement verifyHomepgaeHRM;
 
 
 	public LoginPage(WebDriver driver) {
@@ -68,6 +70,7 @@ public class LoginPage{
 		log.info("clicking on submit button...");
 		new JavaScriptHelper(driver).scrollDownVertically();
 		submitLogin.click();
+
 		return new HomePage(driver);
 	}
 	
@@ -75,16 +78,24 @@ public class LoginPage{
 		return new GenericHelper().isDisplayed(successMsgObject);
 	}
 	
-	public void enterRegistrationEmail(){
-		String email = System.currentTimeMillis()+"@gmail.com";
-		log.info("entering registration email.."+email);
-		registration.sendKeys(email);	
-	}
+//	public void enterRegistrationEmail(){
+//		String email = System.currentTimeMillis()+"@gmail.com";
+//		log.info("entering registration email.."+email);
+//		registration.sendKeys(email);
+//	}
 
 	public void loginToApplication(String userName, String password){
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSubmitButton();
 	}
+
+	public void assertHomePage(){
+		log.info("Verify Home page... " + verifyHomepgaeHRM);
+		boolean ActualHomepageText = verifyHomepgaeHRM.isDisplayed();
+		Assert.assertTrue(true);
+	}
+
+
 
 }

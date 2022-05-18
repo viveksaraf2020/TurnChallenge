@@ -9,7 +9,8 @@ import org.openqa.selenium.WebElement;
 import com.hybridFramework.helper.Logger.LoggerHelper;
 
 /**
- * @author Vivek Saraf
+ * @author Bhanu Pratap
+ * https://www.youtube.com/user/MrBhanupratap29/playlists
  */
 public class JavaScriptHelper {
 

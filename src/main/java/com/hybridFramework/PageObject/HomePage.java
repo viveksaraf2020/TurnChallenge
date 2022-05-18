@@ -217,7 +217,15 @@ public class HomePage {
 		//this.jobVacancy.findElements()
 		Select dropdown = new Select(driver.findElement(By.id("candidateSearch_hiringManager")));
 		dropdown.selectByVisibleText("Odis Adalwin");
+
+
 	}
+
+	public void clickDownloadLink(){
+		log.info("Click search button...."+ downloadResume);
+		downloadResume.click();
+	}
+
 	public void selectDownloadFile() throws InterruptedException {
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("download.default_directory",System.getProperty("user.dir") + File.separator + "externalFiles" + File.separator + "downloadFiles");
@@ -225,13 +233,10 @@ public class HomePage {
 		options.setExperimentalOption("prefs", prefs);
 		ChromeDriver driver = new ChromeDriver(options);
 
-		//We find the download links
-		List<WebElement> list =driver.findElements(By.id("//*[@id='resultTable']/tbody/tr/td[7]/a)[1]"));
-//Click to 5MB web element
+		List<WebElement> list =driver.findElements(By.cssSelector("#resultTable > tbody > tr > td:nth-child(7) > a"));
 		WebElement el = list.get(list.size()-1);
 		el.click();
 		Thread.sleep(500);
-//Hide Google Popup Ad
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("document.querySelector('html > ins').style.display='none'");

@@ -35,7 +35,7 @@ public class LoginTest extends TestBase{
 		}
 	}
 
-	@Test (dependsOnMethods = { "testLoginToApplication" })
+	@Test (priority = 2)
 	public void addNew() throws Exception {
 		log.info(LoginTest.class.getName()+" started");
 		Config config = new Config(OR);
@@ -62,7 +62,7 @@ public class LoginTest extends TestBase{
 		homePage.successfulAddProfile();
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void searchProfile() throws InterruptedException {
 		log.info(LoginTest.class.getName() + " started");
 		Config config = new Config(OR);

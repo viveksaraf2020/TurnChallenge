@@ -76,6 +76,7 @@ public class LoginPage{
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSubmitButton();
+
 	}
 
 	public void assertHomePage(){
